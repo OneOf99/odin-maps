@@ -181,7 +181,7 @@ mappy :: proc() {
                     //log.infof("%d",[2]i32{i, j})
                     chunk, ok := chunk_map[{i,j}]
                     if !ok {
-                        log.info("%d %d",i, j)
+                        //log.info("%d %d",i, j)
                         chunk_map[{i, j}] = GenerateChunk(seeds[0], i, j)
                         chunk = chunk_map[{i, j}]
                     }
